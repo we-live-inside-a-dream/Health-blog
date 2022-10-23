@@ -18,13 +18,14 @@ import {
   uploadBytes
 } from "firebase/storage";
 
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA6WsfsWhrXnkIU85RDGawDXqeV7ffBKOc",
-  authDomain: "persian-shit.firebaseapp.com",
-  projectId: "persian-shit",
-  storageBucket: "persian-shit.appspot.com",
-  messagingSenderId: "409189508251",
-  appId: "1:409189508251:web:f7956eeb6b81ef148b123e"
+  apiKey: "AIzaSyCBISOZb7p-4Jgbf2CxQ2_437G9wZsxI8w",
+  authDomain: "agahiosalamati-52aef.firebaseapp.com",
+  projectId: "agahiosalamati-52aef",
+  storageBucket: "agahiosalamati-52aef.appspot.com",
+  messagingSenderId: "658715392034",
+  appId: "1:658715392034:web:7f97c8e50ea2cb55e4727b"
 };
 
 // Initialize Firebase
