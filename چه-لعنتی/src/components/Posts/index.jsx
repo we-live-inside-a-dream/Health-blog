@@ -18,12 +18,12 @@ const Posts = () => {
 
   return (
     <div>
-      <div style={styles.posts}>
+      <div className={styles.posts}>
         {posts.map((post) => (
           <div key={post.id}>
             <div>{post.title}</div>
             <div>{post.body}</div>
-            <div>
+            <div className={styles.img}>
               {post.fileUrls.map((url) => (
                 <div key={url}>
                   <img src={url} alt="post" />
