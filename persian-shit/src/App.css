@@ -1,0 +1,191 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+
+:root {
+  --background-color: #f5f5f5;
+  --primary-color: #000000;
+  --primary-color-light: #333333;
+  --secondary-color: #ffffff;
+  --secondary-color-light: #f5f5f5;
+  --tertiary-color: #794fec;
+  --tertiary-color-light: #a17df0;
+  --error-color: #ff0000;
+  --error-color-light: #ff3333;
+  --success-color: #007d00;
+  --success-color-light: #00b300;
+  --warning-color: #ffaa00;
+  --warning-color-light: #ffcc00;
+  --accent-color: #dddddd;
+  --accent-color-light: #d1d1d1;
+  --primary-font: "Noto Sans", sans-serif;
+  --title-font: "Noto Sans", cursive;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font);
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+a,
+a:visited,
+a:active,
+a:hover,
+a:focus,
+p,
+span,
+li,
+ul,
+ol {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* buttons */
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+}
+
+button.primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button.primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button.secondary {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button.secondary:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+}
+
+button.tertiary {
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--tertiary-color);
+}
+
+button.tertiary:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+  border: 1px solid var(--tertiary-color);
+}
+
+button.warn {
+  background-color: var(--warning-color);
+  color: var(--primary-color);
+  border: 1px solid var(--warning-color);
+}
+
+button.warn:hover {
+  background-color: var(--primary-color);
+  color: var(--warning-color);
+  border: 1px solid var(--warning-color);
+}
+button.error {
+  background-color: var(--error-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--error-color);
+}
+
+button.error:hover {
+  background-color: var(--secondary-color);
+  color: var(--error-color);
+  border: 1px solid var(--error-color);
+}
+
+button.success {
+  background-color: var(--success-color);
+  color: var(--secondary-color);
+  border: 1px solid var(--success-color);
+}
+
+button.success:hover {
+  background-color: var(--secondary-color);
+  color: var(--success-color);
+  border: 1px solid var(--success-color);
+}
+
+/* input */
+
+input,
+textarea {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--accent-color-light);
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--secondary-color-light);
+  border: 1px solid var(--accent-color);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--accent-color);
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: var(--accent-color-light);
+}
