@@ -30,6 +30,7 @@
 body {
   font-family: var(--primary-font);
   background-color: var(--background-color);
+  padding: 50px 40px;
 }
 
 h1,
@@ -188,4 +189,14 @@ textarea::placeholder {
 input:focus::placeholder,
 textarea:focus::placeholder {
   color: var(--accent-color-light);
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+  background-color: var(--background-color);
 }

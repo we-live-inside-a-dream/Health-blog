@@ -10,7 +10,7 @@ const Home = () => {
     return unsub;
   }, [userAPI]);
   return (
-    <div>
+    <div className="page">
       <button type="button" onClick={() => userAPI.add({ name: "test" })}>
         Add User
       </button>

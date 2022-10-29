@@ -18,7 +18,7 @@ const Upload = () => {
     });
   };
   return (
-    <div>
+    <div className="page">
       <div>
         <input type="file" onChange={handleFileUpload} />
       </div>

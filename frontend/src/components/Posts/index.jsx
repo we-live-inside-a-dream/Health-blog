@@ -17,7 +17,7 @@ const Posts = () => {
   }, []);
 
   return (
-    <div>
+    <div className="page">
       <div className={styles.posts}>
         {posts.map((post) => (
           <div key={post.id}>

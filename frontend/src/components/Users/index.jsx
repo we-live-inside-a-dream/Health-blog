@@ -1,5 +1,5 @@
 import React from "react";
 
-const Users = () => <div>Users</div>;
+const Users = () => <div className="page">Users</div>;
 
 export default Users;
