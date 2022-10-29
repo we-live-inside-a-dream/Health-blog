@@ -22,6 +22,7 @@ const RegisterForm = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
+        <h1>Create a new account</h1>
         <input
           type="email"
           value={email}
