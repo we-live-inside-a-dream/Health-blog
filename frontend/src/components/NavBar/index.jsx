@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useAuth } from "../../api/AuthContext";
 import styles from "./NavBar.module.css";
 
-const NavBar = () => {
+const NavBar = ({ toggleModal }) => {
   const authContext = useAuth();
   const { user, logout } = authContext;
 
@@ -55,11 +55,13 @@ const NavBar = () => {
             Logout
           </button>
         ) : (
-          <Link to="/login">
-            <button type="button" className={styles.navButton}>
-              Login
-            </button>
-          </Link>
+          <button
+            type="button"
+            className={styles.navButton}
+            onClick={toggleModal}
+          >
+            Login
+          </button>
         )}
       </div>
     </div>
