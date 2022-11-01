@@ -27,6 +27,9 @@ const LoginModal = ({ toggleModal }) => {
           <button type="button" onClick={() => setIsRegister(true)}>
             Register
           </button>
+          <button type="button" onClick={toggleModal}>
+            Cancel
+          </button>
         </div>
       </div>
     </>
